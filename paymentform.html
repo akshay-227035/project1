@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>paymentform</title>
+    </head>
+    <style type="text/CSS">
+        .nav{
+            background-color:black;
+        }
+        ul,li{
+            display:inline;
+            padding:5px;
+        }
+        input{
+            margin-top:20px;
+            margin-left:20px;
+            background-color:aliceblue;
+        }
+        </style>
+        <body>
+            <form>
+                <input type="text" id="name" placeholder="search your order"><---Search here</input>
+                    <fieldset>
+                        <legend>GENDER</legend>
+                         MALE <input type="radio" name="gender" id="male" required>
+                        FEMALE<input type="radio" name="gender" id="female" required></p>
+                        </fieldset>
+                 <p>ADDRESS<textarea name= "address"  id="address" col="50" rows="10"></textarea></p>
+                 <p>EMAIL <input type="email" name="email" id="email"></p>
+                 <p>PINCODE<input type="pincode" name="pincode" id="pincode"></p>
+                 <select name="card_type" id="card_type">
+                    <option value="visa">VISA</option>
+                    <option value="rupay">RUPAY</option>
+                    <option value="hr">hr</option>
+                 </select>
+                 <p>cardtype<input type="number" name="card_number" id="card_number"></p>
+                 <p>exp date<input type="date" name="expiry_date" id="expiry_date"></p>
+                 <p>cvv<input type="number" name="cvv" id="cvv"></p>
+                 <button>paynow</button>
+            </form>
+            </body>
+            </html>
